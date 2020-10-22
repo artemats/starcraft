@@ -1,0 +1,39 @@
+.title-1{
+  @extend h1;
+}
+
+.title-2{
+  @extend h2;
+}
+
+.title-3{
+  @extend h3;
+}
+
+.title-4{
+  @extend h4;
+}
+
+.title-5{
+  @extend h5;
+}
+
+.light{
+  font-family: "Gilroy-Light";
+}
+
+.light-italic{
+  font-family: "Gilroy-Light-Italic";
+}
+
+.regular{
+  font-family: "Gilroy-Regular";
+}
+
+.ttu{
+  text-transform: uppercase;
+}
+
+.red{
+  color: $red;
+}

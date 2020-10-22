@@ -1,0 +1,83 @@
+body{
+  background-color: $black;
+  color: $white;
+  @extend .light;
+}
+
+h1{
+  font-size: 127px;
+  letter-spacing: .025em;
+  @extend .light;
+  line-height: .835em;
+}
+
+i{
+  font-style: normal;
+  @extend .light-italic;
+}
+
+#wrapper{
+  position: relative;
+  padding-left: 115px;
+  min-height: 300vh;
+  overflow: hidden;
+}
+
+.container{
+  margin: 0 auto;
+  //padding: 0 15px;
+  //max-width: 1390px;
+  max-width: 1610px;
+  padding: 0 125px;
+  position: relative;
+}
+
+.section{
+  position: relative;
+    &-box{
+      position: relative;
+        &-label{
+          position: absolute;
+          top: 5px;
+          left: -123px;
+          font-size: 17px;
+          text-transform: uppercase;
+          letter-spacing: .075em;
+          color: $red;
+          display: inline-block;
+        }
+    }
+}
+
+.link{
+  font-size: 17px;
+  text-transform: uppercase;
+  @extend .light;
+  letter-spacing: .075em;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  transition: color .3s ease;
+    &-scroll{
+      @extend .link;
+      color: $red;
+      font-size: 11px;
+      @extend .regular;
+    }
+    &.active {
+      color: $red;
+    }
+    @include hover(991){
+      &:hover{
+        color: $red;
+      }
+    }
+}
+
+.social{
+  display: inline-flex;
+  flex-direction: column;
+    &-link{
+      @extend .link;
+    }
+}
