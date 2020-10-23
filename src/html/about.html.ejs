@@ -1,14 +1,16 @@
 <%=require('./components/_head.html')%>
-<main id="wrapper" data-router-wrapper>
+<main id="wrapper">
     <%=require('./components/_header.html')%>
-    <article data-router-view="about">
-        <section class="section hero">
-            <div class="container">
-                <div class="section-box">
-                    <h1 class="title-1 ttu">About page</h1>
+    <div data-router-wrapper>
+        <article data-router-view="about">
+            <section class="section hero">
+                <div class="container">
+                    <div class="section-box">
+                        <h1 class="title-1 ttu">About page</h1>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </article>
+            </section>
+        </article>
+    </div>
 </main>
 <%=require('./components/_scripts.html')%>
