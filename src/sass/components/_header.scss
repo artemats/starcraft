@@ -18,6 +18,10 @@
           width: 100%;
           text-align: center;
         }
+        &-nav{
+          position: absolute;
+          display: none;
+        }
     }
     &-nav{
       position: absolute;
