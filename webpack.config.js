@@ -100,14 +100,14 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: path.resolve(__dirname, 'src/html', 'index.html'),
+            template: path.resolve(__dirname, 'src/html', 'index.html.ejs'),
             minify: {
                 collapseWhitespace: false
             },
         }),
         new HtmlWebpackPlugin({
             filename: 'about.html',
-            template: path.resolve(__dirname, 'src/html', 'about.html'),
+            template: path.resolve(__dirname, 'src/html', 'about.html.ejs'),
             minify: {
                 collapseWhitespace: false
             },
