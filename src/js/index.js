@@ -2,7 +2,7 @@ import Highway from '@dogstudio/highway';
 import Fade from  './transitions/fade';
 import '../libs/smoothscroll';
 import '../sass/styles.scss';
-import { highwayNav } from "./navigation/navigation";
+// import { highwayNav } from "./navigation/navigation";
 
 /*
 Core highway init
@@ -16,4 +16,4 @@ const H = new Highway.Core({
 /*
 Highway navigation
  */
-highwayNav(H);
+// highwayNav(H);
