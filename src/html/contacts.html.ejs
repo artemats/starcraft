@@ -1,7 +1,7 @@
 <%=require('./components/_head.html')%>
-<main id="wrapper">
+<div id="wrapper">
     <%=require('./components/_header.html')%>
-    <div data-router-wrapper>
+    <main data-router-wrapper>
         <article data-router-view="contacts">
             <section class="section hero">
                 <div class="container">
@@ -11,6 +11,6 @@
                 </div>
             </section>
         </article>
-    </div>
-</main>
+    </main>
+</div>
 <%=require('./components/_scripts.html')%>

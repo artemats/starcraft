@@ -100,39 +100,39 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: path.resolve(__dirname, 'src/html', 'index.html.ejs'),
+            template: path.resolve(__dirname, 'src/html', 'index.html'),
             minify: {
                 collapseWhitespace: false
             },
         }),
         new HtmlWebpackPlugin({
             filename: 'about.html',
-            template: path.resolve(__dirname, 'src/html', 'about.html.ejs'),
+            template: path.resolve(__dirname, 'src/html', 'about.html'),
             minify: {
                 collapseWhitespace: false
             },
         }),
-        new HtmlWebpackPlugin({
-            filename: 'contacts.html',
-            template: path.resolve(__dirname, 'src/html', 'contacts.html.ejs'),
-            minify: {
-                collapseWhitespace: false
-            },
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'work.html',
-            template: path.resolve(__dirname, 'src/html', 'work.html.ejs'),
-            minify: {
-                collapseWhitespace: false
-            },
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'project.html',
-            template: path.resolve(__dirname, 'src/html', 'project.html.ejs'),
-            minify: {
-                collapseWhitespace: false
-            },
-        }),
+        // new HtmlWebpackPlugin({
+        //     filename: 'contacts.html',
+        //     template: path.resolve(__dirname, 'src/html', 'contacts.html.ejs'),
+        //     minify: {
+        //         collapseWhitespace: false
+        //     },
+        // }),
+        // new HtmlWebpackPlugin({
+        //     filename: 'work.html',
+        //     template: path.resolve(__dirname, 'src/html', 'work.html.ejs'),
+        //     minify: {
+        //         collapseWhitespace: false
+        //     },
+        // }),
+        // new HtmlWebpackPlugin({
+        //     filename: 'project.html',
+        //     template: path.resolve(__dirname, 'src/html', 'project.html.ejs'),
+        //     minify: {
+        //         collapseWhitespace: false
+        //     },
+        // }),
     ],
     mode: 'production',
     optimization: {
