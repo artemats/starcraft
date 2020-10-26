@@ -1,13 +1,14 @@
 .title{
     &-abstract{
       white-space: nowrap;
-      margin-left: -115px;
+      //margin-left: -115px;
         &-value{
           font-size: 792px;
           @extend .light;
           text-transform: uppercase;
           margin: -66px 0;
           letter-spacing: -.025em;
+          pointer-events: none;
         }
     }
 }

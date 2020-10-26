@@ -6,7 +6,8 @@ import AboutRenderer from "./renderers/about";
 import ContactsRenderer from "./renderers/contacts";
 import WorkRenderer from "./renderers/work";
 import ProjectRenderer from "./renderers/project";
-import {locoScroll} from "./smooth-scroll/smoothScroll";
+import { locoScroll } from "./smooth-scroll/smoothScroll";
+import './animations/horizontalTitleMove';
 
 
 /*
@@ -28,4 +29,6 @@ const H = new Highway.Core({
 /*
 Refresh scroll position
  */
-H.on('NAVIGATE_END', () => locoScroll.update());
+H.on('NAVIGATE_END', () => {
+    locoScroll.update();
+});
