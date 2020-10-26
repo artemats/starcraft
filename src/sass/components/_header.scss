@@ -11,6 +11,7 @@
       left: 0;
       height: 100%;
       width: 115px;
+      z-index: 1;
         &:before{
           content: '';
           position: absolute;
@@ -35,6 +36,12 @@
           top: 35px;
           left: 50%;
           transform: translateX(-50%);
+        }
+        &-burger{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-88%);
         }
     }
     &-nav{

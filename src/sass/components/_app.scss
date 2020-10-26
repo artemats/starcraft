@@ -2,6 +2,7 @@ body{
   background-color: $black;
   color: $white;
   @extend .light;
+  overflow: hidden;
 }
 
 h1{
@@ -16,17 +17,20 @@ i{
   @extend .light-italic;
 }
 
+/* hide default scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
 #wrapper{
   position: relative;
   padding-left: 115px;
-  min-height: 300vh;
+  min-height: 200vh;
   overflow: hidden;
 }
 
 .container{
   margin: 0 auto;
-  //padding: 0 15px;
-  //max-width: 1390px;
   max-width: 1610px;
   padding: 0 125px;
   position: relative;
@@ -39,12 +43,14 @@ i{
         &-label{
           position: absolute;
           top: 5px;
-          left: -123px;
+          left: -185px;
           font-size: 17px;
           text-transform: uppercase;
           letter-spacing: .075em;
           color: $red;
           display: inline-block;
+          text-align: right;
+          width: 130px;
         }
     }
 }
@@ -117,5 +123,35 @@ i{
       display: inline-block;
       opacity: 0;
       pointer-events: none;
+    }
+}
+
+.burger{
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+    &-box{
+      width: 17px;
+      height: 11px;
+      position: relative;
+      display: block;
+        &-arrow{
+          position: absolute;
+          left: 0;
+          height: 1px;
+          width: 100%;
+          background-color: $white;
+            &:nth-child(1){
+              top: 0;
+            }
+            &:nth-child(2){
+              top: 50%;
+              transform: translateY(-50%);
+              width: 70%;
+            }
+            &:nth-child(3){
+              bottom: 0;
+            }
+        }
     }
 }

@@ -7,11 +7,13 @@ Settings
 @import "base/base";
 @import "base/classes";
 @import "../../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css";
+@import "components/scroll-settings";
 
 /*
 Pages
  */
 @import "pages/home/hero";
+@import "pages/home/works";
 
 
 /*
@@ -19,4 +21,5 @@ Components
  */
 @import "components/header";
 @import "components/footer";
+@import "components/title-abstract";
 @import "components/app";
