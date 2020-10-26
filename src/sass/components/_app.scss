@@ -81,3 +81,41 @@ i{
       @extend .link;
     }
 }
+
+.logo{
+  display: inline-block;
+  position: relative;
+    &-title{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: inline-flex;
+      color: $red;
+      font-size: 35px;
+      white-space: nowrap;
+      @extend .campton;
+      writing-mode: vertical-rl;
+      transform: scale(-1, -1) translateX(50%);
+      padding-bottom: 20px;
+        &-symbol{
+          display: inline-block;
+          position: absolute;
+          bottom: 2px;
+          right: 11px;
+          width: 17px;
+          height: 17px;
+          transform: rotate(90deg);
+            img{
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+        }
+    }
+    &-image{
+      width: 72px;
+      display: inline-block;
+      opacity: 0;
+      pointer-events: none;
+    }
+}
