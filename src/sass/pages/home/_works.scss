@@ -1,6 +1,28 @@
 .works{
-  padding: 80px 0;
+  padding: 78px 0 200px;
+  overflow: hidden;
     &-title{
       padding: 30px 0;
+    }
+    &-list{
+      margin: -30px -210px 0 0;
+        &-box{
+          position: relative;
+          padding: 10px 0 12px;
+            &:before{
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: -50vw;
+              right: -50vw;
+              height: 1px;
+              background-color: $white;
+            }
+            &:last-child{
+              &:before{
+                display: none;
+              }
+            }
+        }
     }
 }

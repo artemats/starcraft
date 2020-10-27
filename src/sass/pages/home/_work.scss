@@ -1,0 +1,42 @@
+.work{
+  position: relative;
+  display: block;
+    &-title{
+      position: relative;
+      //padding-right: 178px;
+      text-transform: uppercase;
+      display: inline-block;
+        &-value{
+          font-size: 116px;
+          letter-spacing: .025em;
+          display: inline-block;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: $white;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          transition: all .5s ease;
+          background-repeat: no-repeat;
+          background-image: url(../images/title-clip-bg.png);
+          background-position: center top;
+          background-size: 0 100%;
+        }
+        &-label{
+          position: absolute;
+          top: 25px;
+          right: 0;
+          font-size: 17px;
+          letter-spacing: .075em;
+          left: calc(100% + 20px);
+          white-space: nowrap;
+        }
+    }
+    @include hover(991){
+      &:hover{
+        .work-title-value{
+          -webkit-text-stroke-color: $red;
+          background-size: 100% 100%;
+          text-shadow: 0 0 10px rgba(220,45,22,.5);
+        }
+      }
+    }
+}
