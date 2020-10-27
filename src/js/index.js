@@ -7,8 +7,6 @@ import ContactsRenderer from "./renderers/contacts";
 import WorkRenderer from "./renderers/work";
 import ProjectRenderer from "./renderers/project";
 import { locoScroll } from "./smooth-scroll/smoothScroll";
-import './animations/horizontalTitleMove';
-
 
 /*
 Core highway init

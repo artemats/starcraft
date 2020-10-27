@@ -4,7 +4,6 @@ import {locoScroll} from "../smooth-scroll/smoothScroll";
 
 class Fade extends Highway.Transition {
     out({ from, done }) {
-        locoScroll.destroy();
         Tween.fromTo(from, 0.5,
             {
                 opacity: 1,
@@ -18,7 +17,8 @@ class Fade extends Highway.Transition {
     }
     in({ from, to, done }) {
         window.scrollTo(0, 0);
-        locoScroll.init();
+        locoScroll.scrollTo(0, 0, 0, [0.25, 0.00, 0.35, 1.00], true);
+        locoScroll.update();
         from.remove();
         Tween.fromTo(to, 0.5,
             {
