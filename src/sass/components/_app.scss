@@ -181,6 +181,17 @@ i{
           text-transform: uppercase;
           position: absolute;
           pointer-events: none;
+          transition: box-shadow .2s ease;
         }
+        &-video{
+          cursor: none;
+        }
+          @include hover(991){
+            &:hover{
+              .circle-box-link{
+                box-shadow: 0 0 38px 0 rgba(220,45,22,.5);
+              }
+            }
+          }
     }
 }
