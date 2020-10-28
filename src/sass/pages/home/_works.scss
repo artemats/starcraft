@@ -8,7 +8,7 @@
       margin: -30px -210px 0 0;
         &-box{
           position: relative;
-          padding: 10px 0 12px;
+          padding: 21px 0 24px;
             &:before{
               content: '';
               position: absolute;
@@ -24,5 +24,8 @@
               }
             }
         }
+    }
+    .circle-box{
+      bottom: -225px;
     }
 }

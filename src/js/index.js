@@ -7,6 +7,8 @@ import ContactsRenderer from "./renderers/contacts";
 import WorkRenderer from "./renderers/work";
 import ProjectRenderer from "./renderers/project";
 import { locoScroll } from "./smooth-scroll/smoothScroll";
+import './animations/toggleNav';
+import {closeNavMenu} from "./animations/toggleNav";
 
 /*
 Core highway init
@@ -29,4 +31,9 @@ Refresh scroll position
  */
 H.on('NAVIGATE_END', () => {
     locoScroll.update();
+});
+
+H.on('NAVIGATE_IN', () => {
+    locoScroll.update();
+    closeNavMenu();
 });

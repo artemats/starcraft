@@ -1,0 +1,38 @@
+.nav{
+  position: relative;
+  overflow-y: auto;
+  min-height: 100vh;
+    &-box{
+      padding-top: 228px;
+      position: relative;
+        ul{
+            li{
+              margin-bottom: -11px;
+                a{
+                  @extend .work-title-value;
+                  text-transform: uppercase;
+                    &.active{
+                      -webkit-text-stroke-color: $red;
+                      color: $red;
+                      text-shadow: 0 0 10px rgba(220,45,22,.5);
+                    }
+                    @include hover(991){
+                      &:hover{
+                        -webkit-text-stroke-color: $red;
+                        color: $red;
+                        text-shadow: 0 0 10px rgba(220,45,22,.5);
+                      }
+                    }
+                }
+            }
+        }
+    }
+    .social{
+      position: absolute;
+      top: 40px;
+      left: 0;
+    }
+    .circle-box{
+      bottom: -255px;
+    }
+}
