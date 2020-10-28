@@ -27,6 +27,18 @@ i{
   padding-left: 115px;
   min-height: 200vh;
   overflow: hidden;
+    //&:before{
+    //  content: '';
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //  right: 0;
+    //  bottom: 0;
+    //  background-repeat: repeat;
+    //  background-size: 212px;
+    //  background-image: url(../images/pattern-bg.jpg);
+    //  opacity: .015;
+    //}
 }
 
 .container{
@@ -187,13 +199,13 @@ i{
                 }
             }
             &-label {
-              &-open {
-                display: none;
-              }
-
-              &-close {
-                display: block;
-              }
+              opacity: 1;
+                &-open {
+                  display: none;
+                }
+                &-close {
+                  display: block;
+                }
             }
         }
     }

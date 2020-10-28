@@ -21,7 +21,7 @@ export const openNavMenu = () => {
         },
         {
             opacity: 1,
-            duration: 1,
+            duration: 0.5,
             ease: Power4.easeOut
         });
 
