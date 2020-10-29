@@ -15,6 +15,7 @@ export const toggleVideoFromFollowLink = () => {
             let startY = link.offsetY;
             let currentX = link.clientX;
             let currentY = link.clientY;
+            let topLoco = locoScroll.scroll.instance.scroll.y;
 
             console.log(locoScroll.scroll.instance.scroll.y);
 
@@ -26,7 +27,7 @@ export const toggleVideoFromFollowLink = () => {
                 {
                     position: 'fixed',
                     left: 0,
-                    top: locoScroll.scroll.instance.scroll.y,
+                    top: topLoco,
                     height: '100vh',
                     width: '100vw',
                     borderRadius: 0,

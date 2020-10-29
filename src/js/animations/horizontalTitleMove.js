@@ -5,7 +5,6 @@ export const horizontalMoving = () => {
     const titles = document.querySelectorAll('.title-abstract-value');
 
     for(let i = 0; i < titles.length; i++) {
-
         const titleTl = gsap.timeline({
             scrollTrigger: {
                 trigger: titles[i],
@@ -13,7 +12,6 @@ export const horizontalMoving = () => {
                 scrub: true,
             }
         });
-
         titleTl
             .set(titles[i], {
                 x: '100vw',
@@ -23,7 +21,5 @@ export const horizontalMoving = () => {
             }, {
                 x: '-100vw',
             });
-
     }
-
 };

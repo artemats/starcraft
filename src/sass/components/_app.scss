@@ -3,6 +3,7 @@ body{
   color: $white;
   @extend .light;
   overflow: hidden;
+  transition: background-color .5s ease;
 }
 
 h1{
@@ -265,5 +266,16 @@ i{
               }
           }
         }
+    }
+}
+
+.tab{
+    &-btn{
+
+    }
+    &-content{
+      &:not(:first-child){
+        display: none;
+      }
     }
 }

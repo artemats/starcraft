@@ -14,7 +14,7 @@
           -webkit-text-stroke-color: $white;
           color: transparent;
           -webkit-background-clip: text;
-          transition: all .5s ease;
+          transition: color .5s ease, -webkit-text-stroke-color .5s ease, text-shadow .5s ease;
         }
         &-label{
           position: absolute;

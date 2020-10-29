@@ -1,6 +1,5 @@
 .nav{
   position: relative;
-  overflow-y: auto;
   min-height: 100vh;
     &-box{
       padding-top: 228px;
@@ -8,6 +7,9 @@
         ul{
             li{
               margin-bottom: -11px;
+              overflow: hidden;
+              //transform: translateY(50%);
+              //opacity: 0;
                 a{
                   @extend .work-title-value;
                   text-transform: uppercase;

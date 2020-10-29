@@ -48,6 +48,11 @@
           left: 50%;
           transform: translate(-50%,-88%);
         }
+        &.light-theme{
+          .burger-box-arrow{
+            background-color: $black;
+          }
+        }
     }
     &-nav{
       position: absolute;

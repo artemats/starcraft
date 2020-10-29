@@ -1,10 +1,89 @@
 .services{
-  background-color: $white;
-  padding: 198px 0;
+  //background-color: $white;
+  padding: 198px 0 233px;
+  color: $black;
+    &-content{
+      display: flex;
+        &-tabs{
+          flex: 1;
+          max-width: 47%;
+        }
+        &-body{
+          flex: 1;
+          padding: 4px 0 0 6px;
+        }
+    }
+    &-list{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 6px;
+        &-box{
+          display: inline-block;
+          border: none;
+          padding: 0;
+          background-color: transparent;
+          text-transform: uppercase;
+          font-size: 17px;
+          letter-spacing: .025em;
+          position: relative;
+          transition: color .5s ease;
+          margin-bottom: 10px;
+            &:before{
+              content: '';
+              position: absolute;
+              bottom: 1px;
+              left: 0;
+              width: 0;
+              transition: width .5s ease;
+              height: 1px;
+              background-color: currentColor;
+            }
+            &:last-child{
+              margin-bottom: 0;
+            }
+            &.is-active{
+              color: $red;
+                &:before{
+                  width: 100%;
+                }
+            }
+            @include hover(991){
+              &:hover{
+                color: $red;
+                  &:before{
+                    width: 100%;
+                  }
+              }
+            }
+        }
+    }
     .title-abstract{
         &-value{
           color: $red;
-          margin: -82px 0;
+          margin: -82px 0 2px;
+        }
+    }
+}
+
+.service-box{
+    &-title{
+      color: $red;
+      @extend .regular;
+      text-transform: uppercase;
+      letter-spacing: .005em;
+      font-size: 90px;
+      margin-bottom: 61px;
+        p{
+          line-height: 0.809em;
+        }
+    }
+    &-description{
+      font-size: 44px;
+      letter-spacing: 0.016em;
+      max-width: 605px;
+        p{
+          line-height: 1.091em;
         }
     }
 }

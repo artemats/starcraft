@@ -2,6 +2,7 @@ import { TweenLite, Power4 } from 'gsap';
 
 const burger = document.querySelector('.burger');
 const navBox = document.querySelector('.header-side-nav');
+const links = navBox.querySelectorAll('.nav-box ul li');
 
 burger.addEventListener('click', function () {
 
@@ -12,7 +13,6 @@ burger.addEventListener('click', function () {
 export const openNavMenu = () => {
 
     burger.classList.add('is-active');
-
     navBox.style.display = 'block';
 
     TweenLite.fromTo(navBox,
@@ -22,7 +22,18 @@ export const openNavMenu = () => {
         {
             opacity: 1,
             duration: 0.5,
-            ease: Power4.easeOut
+            ease: Power4.easeOut,
+            // onComplete: () => {
+            //     for(let i = 0; i < links.length; i++) {
+            //         setTimeout(function () {
+            //             TweenLite.to(links[i], 1.5, {
+            //                 y: 0,
+            //                 opacity: 1,
+            //                 ease: Power4.easeOut
+            //             });
+            //         }, 100 * (i + 1));
+            //     }
+            // }
         });
 
 };

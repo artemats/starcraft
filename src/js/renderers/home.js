@@ -2,6 +2,8 @@ import Highway from '@dogstudio/highway';
 import {horizontalMoving} from "../animations/horizontalTitleMove";
 import {mouseFollowLink} from "../animations/mouseFollowLink";
 import {toggleVideoFromFollowLink} from "../animations/toggleVideoFromFollowLink";
+import {changeBgColorOnScroll} from "../animations/changeBgColorOnScroll";
+import {tabsSwitch} from "../common/tabsSwitch";
 
 class HomeRenderer extends Highway.Renderer {
 
@@ -9,6 +11,8 @@ class HomeRenderer extends Highway.Renderer {
         horizontalMoving();
         mouseFollowLink();
         toggleVideoFromFollowLink();
+        changeBgColorOnScroll();
+        tabsSwitch();
         // console.log('home page, on enter');
     }
 
