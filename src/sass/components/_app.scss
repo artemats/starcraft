@@ -65,6 +65,13 @@ i{
           width: 130px;
         }
     }
+    &-label{
+      @extend .section-box-label;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: auto;
+    }
 }
 
 .link{

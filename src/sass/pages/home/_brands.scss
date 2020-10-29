@@ -1,0 +1,16 @@
+.brands{
+  padding: 50px 0 24px;
+    &-list{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 92px 45px;
+        &-box{
+          display: inline-flex;
+          height: 70px;
+          align-items: center;
+          justify-content: center;
+          width: 16.66%;
+          margin-bottom: 68px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.services{
+  background-color: $white;
+  padding: 198px 0;
+    .title-abstract{
+        &-value{
+          color: $red;
+          margin: -82px 0;
+        }
+    }
+}
