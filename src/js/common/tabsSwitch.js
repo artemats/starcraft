@@ -5,7 +5,7 @@ export const tabsSwitch = () => {
     for(let i = 0; i < tabsBtn.length; i++) {
         tabsBtn[i].addEventListener('click', function () {
             let tabId = this.getAttribute('data-tab-id');
-            switchContent(tabId);
+            switchContent(tabId, this);
         });
     }
     /*
@@ -14,10 +14,17 @@ export const tabsSwitch = () => {
     document.querySelector('.tab-btn').classList.add('is-active');
 };
 
-const switchContent = (id) => {
+const switchContent = (id, tab) => {
 
     const tabContents = document.querySelectorAll('.tab-content');
+    const tabBts = document.querySelectorAll('.tab-btn');
     const newTabContent = document.querySelector(`[data-tab-content-id="${id}"]`);
+
+    for(let i = 0; i < tabBts.length; i++) {
+        tabBts[i].classList.remove('is-active');
+    }
+
+    tab.classList.add('is-active');
 
     for(let i = 0; i < tabContents.length; i++) {
         TweenLite.to(tabContents[i], 1, {
@@ -41,4 +48,5 @@ const switchContent = (id) => {
             },
         });
     }
+
 };

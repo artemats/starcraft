@@ -1,6 +1,5 @@
 .works{
   padding: 78px 0 306px;
-  overflow: hidden;
     &-title{
       padding: 30px 0;
     }
@@ -13,7 +12,7 @@
               content: '';
               position: absolute;
               bottom: 0;
-              left: -50vw;
+              left: -115px;
               right: -50vw;
               height: 1px;
               background-color: $white;
@@ -23,10 +22,21 @@
                 display: none;
               }
             }
+            @include hover(991){
+              &:hover{
+                .work-thumb{
+                  opacity: 1;
+                  transition-delay: .3s;
+                }
+              }
+            }
         }
     }
     .circle-box{
-      bottom: -175px;
+      bottom: -280px;
       left: 87px;
+        &-link{
+          top: -100px;
+        }
     }
 }

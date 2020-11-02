@@ -3,6 +3,8 @@ import {horizontalMoving} from "../animations/horizontalTitleMove";
 import {mouseFollowLink} from "../animations/mouseFollowLink";
 import {toggleVideoFromFollowLink} from "../animations/toggleVideoFromFollowLink";
 import {tabsSwitch} from "../common/tabsSwitch";
+import {photoParallax} from "../animations/photoParallax";
+import {moveCursorUnderWorks} from "../animations/worksCursor";
 
 class HomeRenderer extends Highway.Renderer {
 
@@ -11,6 +13,8 @@ class HomeRenderer extends Highway.Renderer {
         mouseFollowLink();
         toggleVideoFromFollowLink();
         tabsSwitch();
+        photoParallax();
+        moveCursorUnderWorks();
         // console.log('home page, on enter');
     }
 
