@@ -20,7 +20,6 @@ class Fade extends Highway.Transition {
         // window.scrollTo(0, 0);
         locoScroll.update();
         locoScroll.scrollTo(0, 0, 0, [0.25, 0.00, 0.35, 1.00], true);
-        locoScroll.update();
 
         from.remove();
         Tween.fromTo(to, 0.5,

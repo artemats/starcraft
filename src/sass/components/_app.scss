@@ -13,6 +13,14 @@ h1{
   line-height: .835em;
 }
 
+h2{
+  font-size: 92px;
+  line-height: 1.2em;
+  @extend .light;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 i{
   font-style: normal;
   @extend .light-italic;
@@ -277,5 +285,14 @@ i{
       &:not(:first-child){
         display: none;
       }
+    }
+}
+
+.copyright{
+  text-align: right;
+    &-title{
+      color: $white;
+      font-size: 13px;
+      letter-spacing: .075em;
     }
 }

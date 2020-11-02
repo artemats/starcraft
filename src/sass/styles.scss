@@ -23,9 +23,10 @@ Pages
 /*
 Components
  */
+@import "components/app";
 @import "components/header";
 @import "components/footer";
 @import "components/title-abstract";
 @import "components/video-modal";
 @import "components/nav";
-@import "components/app";
+@import "components/cta";

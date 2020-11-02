@@ -1,0 +1,44 @@
+.cta{
+  padding: 192px 0 300px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -115px;
+      right: 0;
+      bottom: 0;
+      background-color: $red;
+      pointer-events: none;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 1px;
+      background-color: $black;
+    }
+    .section-label{
+      color: $black;
+    }
+    .circle-box{
+      bottom: -195px;
+      left: 70px;
+      right: 0;
+      width: auto;
+        &-link{
+          background-color: $black;
+        }
+        @include hover(991){
+            &:hover{
+              .circle-box-link{
+                box-shadow: 0 0 38px 0 rgba(21,23,24, 0.3);
+              }
+            }
+        }
+    }
+    .title-2{
+      margin-top: 12px;
+    }
+}

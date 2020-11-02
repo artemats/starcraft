@@ -1,8 +1,14 @@
 .nav{
   position: relative;
   min-height: 100vh;
+    &-overlay{
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 100vh;
+    }
     &-box{
       padding-top: 228px;
+      padding-bottom: 225px;
       position: relative;
         ul{
             li{
@@ -35,7 +41,7 @@
       left: 0;
     }
     .circle-box{
-      bottom: -255px;
+      bottom: 20px;
       width: 50%;
     }
 }

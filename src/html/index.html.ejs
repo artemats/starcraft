@@ -35,8 +35,8 @@
             <section class="section works">
                 <div class="cursor">
                     <picture>
-                        <img src="images/cursor.png" alt="Cursor">
                         <source srcset="images/cursor.webp" type="image/webp">
+                        <img src="images/cursor.png" alt="Cursor">
                         <source srcset="images/cursor.png" type="image/png">
                     </picture>
                 </div>
@@ -234,10 +234,77 @@
                     <div class="title-abstract">
                         <div class="title-abstract-value">Who We Are Who We Are Who We Are</div>
                     </div>
+                    <div class="team-list">
+                        <div class="team-list-box">
+                            <div class="person">
+                                <div class="person-photo">
+                                    <picture>
+                                        <source srcset="../images/team/1.webp" type="image/webp">
+                                        <img src="../images/team/1.jpg" alt="Cursor">
+                                        <source srcset="../images/team/1.jpg" type="image/jpg">
+                                    </picture>
+                                </div>
+                                <div class="person-content">
+                                    <p class="person-content-title">Paul Tkachenko</p>
+                                    <p class="person-content-subtitle">CEO creative, director</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-list-box">
+                            <div class="person">
+                                <div class="person-photo">
+                                    <picture>
+                                        <source srcset="../images/team/2.webp" type="image/webp">
+                                        <img src="../images/team/2.jpg" alt="Cursor">
+                                        <source srcset="../images/team/2.jpg" type="image/jpg">
+                                    </picture>
+                                </div>
+                                <div class="person-content">
+                                    <p class="person-content-title">Quinn Boylan</p>
+                                    <p class="person-content-subtitle">Chief marketing officer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-list-box">
+                            <div class="person">
+                                <div class="person-photo">
+                                    <picture>
+                                        <source srcset="../images/team/3.webp" type="image/webp">
+                                        <img src="../images/team/3.jpg" alt="Cursor">
+                                        <source srcset="../images/team/3.jpg" type="image/jpg">
+                                    </picture>
+                                </div>
+                                <div class="person-content">
+                                    <p class="person-content-title">Diana Flores</p>
+                                    <p class="person-content-subtitle">Chief Finance Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-list-box">
+                            <div class="person">
+                                <div class="person-photo">
+                                    <picture>
+                                        <source srcset="../images/team/4.webp" type="image/webp">
+                                        <img src="../images/team/4.jpg" alt="Cursor">
+                                        <source srcset="../images/team/4.jpg" type="image/jpg">
+                                    </picture>
+                                </div>
+                                <div class="person-content">
+                                    <p class="person-content-title">Quinn Boylan</p>
+                                    <p class="person-content-subtitle">Chief Marketing Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="circle-box">
+                        <span class="circle-box-link">About us</span>
+                    </a>
                 </div>
             </section>
+            <%=require('./components/_cta.html')%>
         </article>
     </div>
+    <%=require('./components/_footer.html')%>
 </main>
 
 </body>

@@ -9,6 +9,7 @@ import ProjectRenderer from "./renderers/project";
 import { locoScroll } from "./smooth-scroll/smoothScroll";
 import './animations/toggleNav';
 import {closeNavMenu} from "./animations/toggleNav";
+import {scrollListener} from "./common/scrollListener";
 
 /*
 Core highway init
@@ -37,3 +38,8 @@ H.on('NAVIGATE_IN', () => {
     locoScroll.update();
     closeNavMenu();
 });
+
+/*
+Init scroll listener
+ */
+scrollListener();
