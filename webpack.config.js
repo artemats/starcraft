@@ -90,7 +90,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "/dist"),
         compress: true,
-        port: 3000,
+        port: 3030,
         historyApiFallback: true,
     },
     plugins: [
@@ -101,35 +101,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: path.resolve(__dirname, 'src/html', 'index.html.ejs'),
-            minify: {
-                collapseWhitespace: false
-            },
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'about.html',
-            template: path.resolve(__dirname, 'src/html', 'about.html.ejs'),
-            minify: {
-                collapseWhitespace: false
-            },
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'contacts.html',
-            template: path.resolve(__dirname, 'src/html', 'contacts.html.ejs'),
-            minify: {
-                collapseWhitespace: false
-            },
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'work.html',
-            template: path.resolve(__dirname, 'src/html', 'work.html.ejs'),
-            minify: {
-                collapseWhitespace: false
-            },
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'project.html',
-            template: path.resolve(__dirname, 'src/html', 'project.html.ejs'),
+            template: path.resolve(__dirname, 'src/html', 'index.html'),
             minify: {
                 collapseWhitespace: false
             },
