@@ -1,5 +1,8 @@
-.c-scrollbar_thumb{
-  background-color: $white;
-  border-radius: 0;
-  opacity: .2;
+.c-scrollbar{
+  display: none;
+    &_thumb{
+      background-color: $white;
+      border-radius: 0;
+      opacity: .2;
+    }
 }

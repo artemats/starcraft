@@ -8,7 +8,7 @@ export const locoScroll = new LocomotiveScroll({
     el: scrollContainer,
     smooth: true,
     smoothMobile: true,
-    lerp: 0.07
+    lerp: 0.05
 });
 
 

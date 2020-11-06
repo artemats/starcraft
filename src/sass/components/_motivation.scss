@@ -1,0 +1,12 @@
+.motivation{
+  min-height: 815px;
+    &-banner{
+      margin: 100px 0 0 -240px;
+    }
+    &-content{
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 355px;
+    }
+}

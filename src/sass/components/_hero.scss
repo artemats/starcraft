@@ -1,0 +1,42 @@
+.hero{
+  padding: 210px 0 175px;
+  min-height: 1130px;
+  margin-bottom: 145px;
+    &-content{
+      padding-top: 131px;
+      max-width: 1000px;
+        &-title{
+          margin-bottom: 53px;
+          margin-left: -40px;
+            h1, .title-2{
+              letter-spacing: .024em;
+            }
+        }
+        &-image{
+          margin-left: -40px;
+        }
+        &-action{
+          margin-top: 106px;
+          padding-left: 55px;
+            .follow{
+              width: 70%;
+            }
+        }
+    }
+    &-illustration{
+      position: absolute;
+      right: -135px;
+      bottom: -204px;
+      max-width: 1020px;
+      pointer-events: none;
+    }
+    &-bottom{
+      position: absolute;
+      left: 0;
+      bottom: 80px;
+      width: 100%;
+    }
+    .section-border{
+      top: 121px;
+    }
+}

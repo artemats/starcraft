@@ -1,0 +1,49 @@
+.rcg{
+  min-height: 970px;
+  padding-top: 4px;
+    &-content{
+      padding-top: 5px;
+      max-width: 700px;
+      margin-bottom: 60px;
+        &-title{
+          margin-bottom: 41px;
+          max-width: 610px;
+        }
+    }
+    .section-content{
+        .title-1{
+          margin-bottom: 17px;
+        }
+    }
+    .section-border{
+      top: 17px;
+    }
+    .follow{
+      margin-left: 52px;
+    }
+}
+
+.goals{
+    &-title{
+      margin-bottom: 22px;
+    }
+    &-list{
+      display: flex;
+      flex-wrap: wrap;
+        &-box{
+          width: 50%;
+          margin-bottom: 30px;
+        }
+    }
+}
+
+.goal{
+    &-title{
+      color: $blue;
+      margin-bottom: 12px;
+    }
+    &-subtitle{
+      line-height: 1.5em;
+      max-width: 250px;
+    }
+}

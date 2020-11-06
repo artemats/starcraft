@@ -1,0 +1,14 @@
+.about{
+  min-height: 970px;
+  padding: 17px 0 0;
+    &-title{
+      max-width: 360px;
+      margin-bottom: 56px;
+    }
+    &-description{
+      max-width: 360px;
+    }
+    .section-border{
+      top: 32px;
+    }
+}
