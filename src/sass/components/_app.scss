@@ -39,8 +39,7 @@ p, li{
 }
 
 #wrapper{
-  min-height: 200vh;
-  padding: 0 130px;
+  padding: 0 130px 300px;
   width: 100%;
   height: 100%;
 }
@@ -60,6 +59,7 @@ p, li{
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+      max-width: 1668px;
       width: 100%;
       height: 100%;
       pointer-events: none;
@@ -101,18 +101,22 @@ p, li{
               display: block;
             }
         }
+        &-subtitle{
+
+        }
     }
     &-abstract{
       position: absolute;
       max-width: 169px;
       top: 20.2%;
       right: 15.5%;
+      pointer-events: none;
     }
 }
 
 .follow{
   position: relative;
-  height: 180px;
+  height: 250px;
   display: block;
   cursor: none;
     &-link{

@@ -1,0 +1,100 @@
+.details{
+  min-height: 1100px;
+  padding-top: 20px;
+    &-list{
+      display: flex;
+      margin: 0 -134px 60px;
+      padding-top: 53px;
+        &-box{
+          position: relative;
+          text-align: center;
+          flex: 1;
+            &.where{
+              padding-top: 57px;
+                .details-title{
+                  padding-left: 105px;
+                  display: inline-block;
+                  position: relative;
+                    &:before{
+                      content: '';
+                      position: absolute;
+                      top: calc(100% + 22px);
+                      right: -32px;
+                      width: 200px;
+                      height: 77px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      background-position: center;
+                      background-image: url(../images/details/details-where-arrow.png);
+                    }
+                }
+            }
+        }
+    }
+    &-title{
+
+    }
+    &-thumb{
+      height: 390px;
+      position: relative;
+      margin-bottom: 28px;
+      text-align: center;
+        &-label{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-22%,-50%);
+        }
+    }
+    .section{
+        &-border{
+          top: 29px;
+        }
+        &-abstract{
+          right: 4.8%;
+          top: 57%;
+        }
+        &-content {
+            &-title {
+              margin-top: -22px;
+              margin-bottom: 50px;
+            }
+            &-subtitle {
+              max-width: 520px;
+            }
+        }
+    }
+    .follow{
+      margin-left: 30px;
+        &-link{
+          top: 45px;
+        }
+    }
+}
+
+.where{
+    &-title{
+      position: absolute;
+      top: 56px;
+      right: 190px;
+      min-height: 215px;
+        &-circle{
+          width: 103px;
+          height: 103px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          background-image: url(../images/details/details-where-circle.png);
+          margin: 72px 0 0 -60px;
+          position: relative;
+            img{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-top: -23px;
+              margin-left: -22px;
+              pointer-events: none;
+            }
+        }
+    }
+}

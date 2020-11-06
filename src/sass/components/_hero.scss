@@ -1,5 +1,5 @@
 .hero{
-  padding: 210px 0 175px;
+  padding: 210px 0 107px;
   min-height: 1130px;
   margin-bottom: 145px;
     &-content{
@@ -26,7 +26,7 @@
     &-illustration{
       position: absolute;
       right: -135px;
-      bottom: -204px;
+      bottom: -135px;
       max-width: 1020px;
       pointer-events: none;
     }
@@ -35,6 +35,7 @@
       left: 0;
       bottom: 80px;
       width: 100%;
+      pointer-events: none;
     }
     .section-border{
       top: 121px;
