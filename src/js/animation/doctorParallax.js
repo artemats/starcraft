@@ -13,8 +13,13 @@ const doctorTl = gsap.timeline({
 console.log(doctorTl);
 
 doctorTl
+    .set(doctor, {
+        opacity: 0.4
+    })
     .fromTo(doctor, {
         y: 0,
+        opacity: 0.4
     }, {
         y: '-65%',
+        opacity: 1
     }, 0.2);
