@@ -45,6 +45,9 @@
           left: 50%;
           transform: translate(-22%,-50%);
         }
+        @include d(1300){
+          height: 300px;
+        }
     }
     .section{
         &-border{
@@ -69,6 +72,9 @@
         &-link{
           top: 45px;
         }
+    }
+    @include d(1500){
+      min-height: 0;
     }
 }
 

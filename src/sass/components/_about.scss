@@ -17,4 +17,11 @@
           right: 12.3%;
         }
     }
+    @include d(1500){
+      margin-bottom: 100px;
+      min-height: 900px;
+    }
+    @include d(1440){
+      min-height: 0;
+    }
 }

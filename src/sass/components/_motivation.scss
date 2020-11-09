@@ -2,6 +2,10 @@
   min-height: 815px;
     &-banner{
       margin: 100px 0 0 -240px;
+        @include d(1500){
+          margin: 100px 0 0 -155px;
+          max-width: 90vw;
+        }
     }
     &-content{
       position: absolute;
@@ -20,5 +24,15 @@
         &-description{
           padding-top: 22px;
         }
+        @include d(1500){
+          right: 45px;
+        }
+    }
+    @include d(1440){
+      padding-top: 50px;
+    }
+    @include d(1300){
+      min-height: 0;
+      margin-bottom: 100px;
     }
 }

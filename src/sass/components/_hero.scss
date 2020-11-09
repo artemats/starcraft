@@ -11,9 +11,21 @@
             h1, .title-2{
               letter-spacing: .024em;
             }
+            @include d(1700){
+              max-width: 95%;
+            }
+            @include d(1600){
+              margin-left: 0;
+            }
+            @include d(1440){
+              max-width: 85%;
+            }
         }
         &-image{
           margin-left: -40px;
+            @include d(1600){
+              margin-left: 0;
+            }
         }
         &-action{
           margin-top: 106px;
@@ -21,6 +33,18 @@
             .follow{
               width: 70%;
             }
+            @include d(1700){
+              padding-left: 0;
+            }
+            @include d(1500){
+              margin-top: 70px;
+            }
+            @include d(1440){
+              margin-top: 20px;
+            }
+        }
+        @include d(1500){
+          padding-top: 50px;
         }
     }
     &-illustration{
@@ -29,6 +53,24 @@
       bottom: -135px;
       max-width: 1020px;
       pointer-events: none;
+        @include d(1700){
+          right: -160px;
+          bottom: -65px;
+          max-width: 955px;
+        }
+        @include d(1500){
+          right: -140px;
+          bottom: -20px;
+          max-width: 900px;
+        }
+        @include d(1440){
+          right: -115px;
+          bottom: -20px;
+          max-width: 820px;
+        }
+        @include d(1300){
+          max-width: 760px;
+        }
     }
     &-bottom{
       position: absolute;
@@ -36,6 +78,17 @@
       bottom: 60px;
       right: -130px;
       pointer-events: none;
+      text-align: center;
+        @include d(1600){
+          left: -30px;
+          right: -30px;
+        }
+        @include d(1440){
+          bottom: 10px;
+        }
+        @include d(1300){
+          bottom: 0;
+        }
     }
     &-center{
       position: absolute;
@@ -51,9 +104,28 @@
           position: relative;
           max-width: 420px;
           opacity: .4;
+            @include d(1500){
+              max-width: 360px;
+            }
+        }
+        @include d(1700){
+          padding-top: 60vh;
+        }
+        @include d(1300){
+          padding-top: 57vh;
         }
     }
     .section-border{
       top: 121px;
+    }
+    @include d(1600){
+      min-height: 950px;
+    }
+    @include d(1500){
+      padding: 170px 0 100px;
+    }
+    @include d(1440){
+      padding: 170px 0 50px;
+      min-height: 100vh;
     }
 }

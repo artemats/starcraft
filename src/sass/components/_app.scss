@@ -11,6 +11,18 @@ h1{
   line-height: 1.05em;
   @extend .monument;
   letter-spacing: .1em;
+    @include d(1700){
+      font-size: 60px;
+    }
+    @include d(1500){
+      font-size: 58px;
+    }
+    @include d(1440){
+      font-size: 54px;
+    }
+    @include d(1300){
+      font-size: 52px;
+    }
 }
 
 h2{
@@ -18,12 +30,33 @@ h2{
   line-height: 1.32em;
   @extend .monument;
   letter-spacing: .1em;
+    @include d(1700){
+      font-size: 58px;
+    }
+    @include d(1500){
+      font-size: 56px;
+    }
+    @include d(1440){
+      font-size: 52px;
+    }
+    @include d(1300){
+      font-size: 50px;
+    }
 }
 
 h3{
   font-size: 40px;
   letter-spacing: .1em;
   @extend .monument;
+    @include d(1500){
+      font-size: 36px;
+    }
+    @include d(1440){
+      font-size: 34px;
+    }
+    @include d(1300){
+      font-size: 32px;
+    }
 }
 
 h4{
@@ -42,6 +75,9 @@ p, li{
   padding: 0 130px 300px;
   width: 100%;
   height: 100%;
+    @include d(1600){
+      padding: 0 0 300px;
+    }
 }
 
 .container{
@@ -50,6 +86,12 @@ p, li{
   max-width: 1520px;
   width: 100%;
   position: relative;
+    @include d(1700){
+      max-width: 1340px;
+    }
+    @include d(1600){
+      max-width: 1480px;
+    }
 }
 
 .section{
@@ -59,8 +101,7 @@ p, li{
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      max-width: 1668px;
-      width: 100%;
+      width: 1668px;
       height: 100%;
       pointer-events: none;
       text-align: center;
@@ -74,11 +115,27 @@ p, li{
           text-orientation: mixed;
           font-size: 18px;
           white-space: nowrap;
+            @include d(1700){
+              top: 160px;
+            }
+            @include d(1600){
+              top: 0;
+              right: 0;
+            }
         }
         img{
           margin-right: -10px;
           max-width: calc(100% + 10px);
           object-fit: cover;
+            @include d(1600){
+              display: none;
+            }
+        }
+        @include d(1700){
+          width: 1544px;
+        }
+        @include d(1600){
+          width: 100%;
         }
     }
     &-label{
@@ -90,6 +147,12 @@ p, li{
       text-transform: uppercase;
       @extend .bold;
       white-space: nowrap;
+        @include d(1700){
+          left: 0;
+        }
+        @include d(1600){
+          left: 40px;
+        }
     }
     &-content{
       padding: 180px 0 50px;
@@ -100,9 +163,15 @@ p, li{
             span{
               display: block;
             }
+            @include d(1600){
+              margin-left: 0;
+            }
         }
         &-subtitle{
 
+        }
+        @include d(1500){
+          padding: 90px 0 50px;
         }
     }
     &-abstract{
