@@ -10,6 +10,14 @@
           max-width: 610px;
         }
     }
+    &-video{
+      position: absolute;
+      bottom: 14%;
+      right: -13%;
+      width: 960px;
+      height: 640px;
+      z-index: -1;
+    }
     .section-content{
         .title-1{
           margin-bottom: 17px;

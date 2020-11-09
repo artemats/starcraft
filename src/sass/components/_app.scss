@@ -66,8 +66,8 @@ p, li{
       text-align: center;
         &-title{
           position: absolute;
-          top: 164px;
-          right: -27px;
+          top: 175px;
+          right: -25px;
           color: $blue;
           display: inline-flex;
           writing-mode: vertical-rl;
@@ -160,6 +160,23 @@ p, li{
           background-size: contain;
           background-position: center;
           background-image: url(../images/border.png);
+        }
+    }
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 100%;
+    picture{
+      height: auto;
+    }
+    img{
+        &:not(:first-child){
+          margin-top: -5px;
         }
     }
 }

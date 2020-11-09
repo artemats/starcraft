@@ -5,8 +5,20 @@
     }
     &-content{
       position: absolute;
-      top: 0;
+      top: -175px;
       right: 0;
       max-width: 355px;
+        &-thumb{
+          position: relative;
+          width: 225px;
+          margin-bottom: 40px;
+          -moz-transform: perspective(1000px);
+          -moz-transform-style: preserve-3d;
+          -webkit-perspective: 1000px;
+          box-shadow: 25px 25px 32px 0 rgba(0,0,0,0.5);
+        }
+        &-description{
+          padding-top: 22px;
+        }
     }
 }

@@ -8,7 +8,13 @@
     &-description{
       max-width: 360px;
     }
-    .section-border{
-      top: 32px;
+    .section{
+        &-border{
+          top: 32px;
+        }
+        &-abstract{
+          top: 22.4%;
+          right: 12.3%;
+        }
     }
 }
