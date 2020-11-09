@@ -28,26 +28,11 @@
 <body>
 <main id="wrapper">
   <div class="background">
-    <picture>
-      <!--          <source srcset="../images/hero/hero-banner.webp" type="image/webp">-->
-      <source srcset="../images/bg/s1.png" type="image/png">
-      <img src="../images/bg/s1.png" alt="Star Craft" />
-    </picture>
-    <picture>
-      <!--          <source srcset="../images/hero/hero-banner.webp" type="image/webp">-->
-      <source srcset="../images/bg/s2.png" type="image/png">
-      <img src="../images/bg/s2.png" alt="Star Craft" />
-    </picture>
-    <picture>
-      <!--          <source srcset="../images/hero/hero-banner.webp" type="image/webp">-->
-      <source srcset="../images/bg/s3.png" type="image/png">
-      <img src="../images/bg/s3.png" alt="Star Craft" />
-    </picture>
-    <picture>
-      <!--          <source srcset="../images/hero/hero-banner.webp" type="image/webp">-->
-      <source srcset="../images/bg/s4.png" type="image/png">
-      <img src="../images/bg/s4.png" alt="Star Craft" />
-    </picture>
+<!--    <picture>-->
+<!--      <source srcset="../images/s1.webp" type="image/webp">-->
+<!--      <source srcset="../images/s1.png" type="image/png">-->
+<!--      <img src="../images/s1.png" alt="Star Craft" />-->
+<!--    </picture>-->
   </div>
   <header class="header">
     <div class="container">
@@ -56,50 +41,54 @@
       </div>
     </div>
   </header>
-  <section class="section hero">
-    <div class="hero-bottom">
-      <img src="../images/hero/hero-bottom.png" alt="" />
-    </div>
-    <div class="section-border">
-      <p class="section-border-title">Game tournament</p>
-      <img src="../images/hero/hero-border.png" alt="Game tournament" />
-    </div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-content-title">
-          <h1 class="title-2">
-            <span class="gradient">We still need $X,XXX</span>
-            <span class="gradient">to make RCG 2021</span>
-            <span class="gradient">happen.</span>
-          </h1>
-        </div>
-        <div class="hero-content-image">
-          <img src="../images/text-image.png" alt="We still need $X,XXX to make RCG 2021 happen." />
-        </div>
-        <div class="hero-content-action">
-          <a href="#"
-             class="follow"
-             data-scroll
-             data-scroll-repeat="true"
-             data-scroll-call="start_link_lottie">
-            <div class="follow-link">
-              <div class="follow-link-border"></div>
-              <div class="follow-link-bg"></div>
-              <span class="follow-link-title">Donate now</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="hero-illustration">
+  <div id="hero-sticky">
+    <section class="section hero">
+      <div class="hero-center" data-scroll data-scroll-sticky data-scroll-target="#hero-sticky" data-scroll-offset="0, 70%">
         <picture>
-<!--          <source srcset="../images/hero/hero-banner.webp" type="image/webp">-->
-          <source srcset="../images/hero/hero-banner.png" type="image/png">
-          <img src="../images/hero/hero-banner.png" alt="Star Craft" />
+          <!--          <source srcset="images/hero-banner.webp.webp" type="image/webp">-->
+          <source srcset="../images/hero/hero-center.png" type="image/png">
+          <img src="../images/hero/hero-center.png" alt="Star Craft" />
         </picture>
       </div>
-    </div>
-  </section>
-  <section class="section about">
+      <div class="hero-bottom">
+        <img src="../images/hero/hero-bottom.png" alt="" />
+      </div>
+      <div class="section-border">
+        <p class="section-border-title">Game tournament</p>
+        <img src="../images/hero/hero-border.png" alt="Game tournament" />
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-content-title">
+            <h1 class="title-2">
+              <span class="gradient">We still need $X,XXX</span>
+              <span class="gradient">to make RCG 2021</span>
+              <span class="gradient">happen.</span>
+            </h1>
+          </div>
+          <div class="hero-content-image">
+            <img src="../images/text-image.png" alt="We still need $X,XXX to make RCG 2021 happen." />
+          </div>
+          <div class="hero-content-action">
+            <a href="#" class="follow">
+              <div class="follow-link">
+                <div class="follow-link-border"></div>
+                <div class="follow-link-bg"></div>
+                <span class="follow-link-title">Donate now</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="hero-illustration">
+          <picture>
+  <!--          <source srcset="images/hero-banner.webp.webp" type="image/webp">-->
+            <source srcset="../images/hero/hero-banner.png" type="image/png">
+            <img src="../images/hero/hero-banner.png" alt="Star Craft" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="section about">
     <div class="section-border">
       <p class="section-border-title">Game tournament</p>
       <img src="../images/about/about-border.png" alt="Game tournament" />
@@ -122,6 +111,7 @@
       </div>
     </div>
   </section>
+  </div>
   <section class="section motivation">
     <div class="container">
       <div class="motivation-banner">
@@ -154,7 +144,7 @@
       <p class="section-label">We can make RCG 2021happen</p>
       <div class="section-content">
         <div class="rcg-video">
-          <video muted loop autoplay>
+          <video muted loop autoplay playsinline webkit-playsinline>
             <source src="../video/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -189,11 +179,7 @@
             </div>
           </div>
         </div>
-        <a href="#"
-           class="follow"
-           data-scroll
-           data-scroll-repeat="true"
-           data-scroll-call="start_link_lottie">
+        <a href="#" class="follow">
           <div class="follow-link">
             <div class="follow-link-border"></div>
             <div class="follow-link-bg"></div>
@@ -246,11 +232,7 @@
           </div>
         </div>
       </div>
-      <a href="#"
-         class="follow"
-         data-scroll
-         data-scroll-repeat="true"
-         data-scroll-call="start_link_lottie">
+      <a href="#" class="follow">
         <div class="follow-link">
           <div class="follow-link-border"></div>
           <div class="follow-link-bg"></div>

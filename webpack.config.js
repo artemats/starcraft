@@ -60,7 +60,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(gif|png|jpe?g|svg|webp,jpg)$/i,
+                test: /\.(gif|png|jpe?g|svg|jpg)$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -68,6 +68,7 @@ module.exports = {
                             name: '[name].[ext]',
                             outputPath: 'images/',
                             publicPath: 'images/',
+                            useRelativePath: true,
                             esModule: false
                         }
                     }

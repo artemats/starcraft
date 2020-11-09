@@ -8,7 +8,7 @@ export const initLottie = () => {
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: '../lottie/lightning/data.json',
+            path: 'lottie/lightning/data.json',
             rendererSettings: {
                 progressiveLoad: true
             }

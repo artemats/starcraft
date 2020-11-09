@@ -32,10 +32,17 @@
     }
     &-bottom{
       position: absolute;
-      left: 0;
-      bottom: 80px;
-      width: 100%;
+      left: -130px;
+      bottom: 60px;
+      right: -130px;
       pointer-events: none;
+    }
+    &-center{
+      position: absolute;
+      left: 50%;
+      margin-left: -210px;
+      top: 50.6%;
+      max-width: 420px;
     }
     .section-border{
       top: 121px;
