@@ -137,5 +137,20 @@ p, li{
       padding-top: 11px;
       letter-spacing: .14em;
       pointer-events: none;
+        &-bg{
+          position: absolute;
+          //top: -50px;
+          //right: -50px;
+          //left: -50px;
+          //bottom: -50px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 570px;
+          height: 440px;
+        }
+        &-title{
+          position: relative;
+        }
     }
 }
