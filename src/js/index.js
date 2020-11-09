@@ -3,6 +3,7 @@ import './smooth-scroll/smoothScroll';
 import { followMoving } from "./animation/follow-moving";
 import { initLottie } from "./animation/lottie";
 import './animation/perspectiveRotateOnMouse';
+import './animation/doctorParallax';
 
 /*
 Initial follow moving for links
