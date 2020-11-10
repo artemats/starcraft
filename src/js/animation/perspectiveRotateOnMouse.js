@@ -27,7 +27,7 @@ const update = () => {
     let tiltx = (dy / cy);
     let tilty = -(dx / cx);
     let radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2));
-    let degree = (radius * 40);
+    let degree = (radius * 20);
     TweenLite.set(thumb, {transform:'rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)'});
 };
 
