@@ -8,11 +8,12 @@
           max-width: 320px;
         }
         @include d(767){
-          max-width: 45vw;
+          //max-width: 45vw;
+          max-width: 100%;
         }
-        @include d(480){
-          max-width: 55vw;
-        }
+        //@include d(480){
+        //  max-width: 55vw;
+        //}
     }
     &-description{
       max-width: 360px;
@@ -20,11 +21,12 @@
           max-width: 315px;
         }
         @include d(767){
-          max-width: 45vw;
+          //max-width: 45vw;
+          max-width: 100%;
         }
-        @include d(480){
-          max-width: 55vw;
-        }
+        //@include d(480){
+        //  max-width: 55vw;
+        //}
     }
     .section{
         &-border{

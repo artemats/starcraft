@@ -6,17 +6,11 @@ import './animation/perspectiveRotateOnMouse';
 import './animation/doctorParallax';
 import './animation/countdown';
 import {scrollListener} from "./common/scroll-listener";
-import {detectDoctorHeight} from "./common/detectDoctorHeight";
 
 /*
 Initial follow moving for links
  */
 followMoving();
-
-/*
-Detect hero height for doctor parallax
- */
-detectDoctorHeight();
 
 /*
 Initial lottie animation
