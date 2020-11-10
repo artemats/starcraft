@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const locoScroll = new LocomotiveScroll({
     el: scrollContainer,
     smooth: true,
-    smoothMobile: true,
+    smoothMobile: false,
     lerp: 0.05
 });
 

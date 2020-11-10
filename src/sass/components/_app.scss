@@ -3,7 +3,15 @@ body{
   color: $white;
   font-size: 16px;
   @extend .regular;
-  overflow: hidden;
+}
+
+.has-scroll-smooth{
+    body{
+      overflow: hidden;
+    }
+    .hero-center-doctor{
+      position: relative;
+    }
 }
 
 h1{

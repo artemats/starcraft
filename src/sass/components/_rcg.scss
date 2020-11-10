@@ -46,9 +46,11 @@
           width: 100vw;
           height: auto;
           margin-left: -60px;
+          z-index: 0;
         }
         @include d(480){
           margin-left: -20px;
+          margin-top: 40px;
         }
     }
     .section{
