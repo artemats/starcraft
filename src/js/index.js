@@ -5,7 +5,7 @@ import {initLottie} from "./animation/lottie";
 import './animation/perspectiveRotateOnMouse';
 import './animation/doctorParallax';
 import './animation/countdown';
-import {scrollListener} from "./common/scoll-listener";
+import {scrollListener} from "./common/scroll-listener";
 import {detectDoctorHeight} from "./common/detectDoctorHeight";
 
 /*

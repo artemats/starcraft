@@ -19,5 +19,5 @@ doctorTl
         opacity: 0.4
     }, {
         y: '-65%',
-        opacity: 1
+        opacity: 1,
     }, 0.2);
