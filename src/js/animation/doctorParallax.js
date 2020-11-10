@@ -10,8 +10,6 @@ const doctorTl = gsap.timeline({
     }
 });
 
-console.log(doctorTl);
-
 doctorTl
     .set(doctor, {
         opacity: 0.4

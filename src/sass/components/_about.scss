@@ -4,17 +4,45 @@
     &-title{
       max-width: 360px;
       margin-bottom: 56px;
+        @include d(1200){
+          max-width: 320px;
+        }
+        @include d(767){
+          max-width: 45vw;
+        }
+        @include d(480){
+          max-width: 55vw;
+        }
     }
     &-description{
       max-width: 360px;
+        @include d(1200){
+          max-width: 315px;
+        }
+        @include d(767){
+          max-width: 45vw;
+        }
+        @include d(480){
+          max-width: 55vw;
+        }
     }
     .section{
         &-border{
           top: 32px;
+            @include d(992){
+              top: 0;
+            }
         }
         &-abstract{
           top: 22.4%;
           right: 12.3%;
+            @include d(1200){
+              top: 31%;
+              right: 3.3%;
+            }
+            @include d(767){
+              display: none;
+            }
         }
     }
     @include d(1500){
@@ -23,5 +51,8 @@
     }
     @include d(1440){
       min-height: 0;
+    }
+    @include d(480){
+      margin-bottom: 50px;
     }
 }

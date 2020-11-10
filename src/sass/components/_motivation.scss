@@ -6,6 +6,18 @@
           margin: 100px 0 0 -155px;
           max-width: 90vw;
         }
+        @include d(992){
+          margin: 100px 0 0 -200px;
+        }
+        @include d(767){
+          margin: -30px 0 0 -48vw;
+          max-width: 170vw;
+          width: 170vw;
+        }
+        @include d(480){
+          max-width: 190vw;
+          width: 190vw;
+        }
     }
     &-content{
       position: absolute;
@@ -20,12 +32,31 @@
           -moz-transform-style: preserve-3d;
           -webkit-perspective: 1000px;
           box-shadow: 25px 25px 32px 0 rgba(0,0,0,0.5);
+          text-align: center;
+            @include d(767){
+              width: 100%;
+            }
+            @include d(480){
+              margin-bottom: 10px;
+            }
         }
         &-description{
           padding-top: 22px;
         }
         @include d(1500){
           right: 45px;
+        }
+        @include d(1200){
+          top: -110px;
+        }
+        @include d(992){
+          right: 40px;
+        }
+        @include d(767){
+          position: relative;
+          top: 0;
+          right: 0;
+          max-width: 100%;
         }
     }
     @include d(1440){

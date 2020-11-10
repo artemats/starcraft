@@ -17,6 +17,9 @@
       width: 960px;
       height: 640px;
       z-index: -1;
+        video{
+          width: 100%;
+        }
         @include d(1700){
           right: -22%;
         }
@@ -28,6 +31,24 @@
           height: 440px;
           right: -14%;
           bottom: 2%;
+        }
+        @include d(1200){
+          bottom: -7%;
+        }
+        @include d(992){
+          bottom: -13%;
+          right: -31%;
+        }
+        @include d(767){
+          position: relative;
+          bottom: 0;
+          right: 0;
+          width: 100vw;
+          height: auto;
+          margin-left: -60px;
+        }
+        @include d(480){
+          margin-left: -20px;
         }
     }
     .section{
@@ -44,6 +65,16 @@
       margin-left: 52px;
         &-link{
           top: 24%;
+            @include d(992){
+              top: 0;
+            }
+            @include d(767){
+              left: 50%;
+              transform: translateX(-50%);
+            }
+        }
+        @include d(992){
+          margin-left: 0;
         }
     }
     @include d(1500){
@@ -51,6 +82,9 @@
     }
     @include d(1440){
       margin-bottom: 80px;
+    }
+    @include d(767){
+      margin-bottom: -50px;
     }
 }
 
@@ -64,6 +98,12 @@
         &-box{
           width: 50%;
           margin-bottom: 30px;
+            @include d(767){
+              padding-right: 20px;
+            }
+            @include d(480){
+              width: 100%;
+            }
         }
     }
 }

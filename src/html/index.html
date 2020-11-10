@@ -120,13 +120,6 @@
   </div>
   <section class="section motivation">
     <div class="container">
-      <div class="motivation-banner">
-        <picture>
-          <!--          <source srcset="../images/motivation/motivation-banner.webp" type="image/webp">-->
-          <source srcset="../images/motivation/motivation-banner.png" type="image/png">
-          <img src="../images/motivation/motivation-banner.png" alt="" />
-        </picture>
-      </div>
       <div class="motivation-content">
         <div class="motivation-content-thumb">
           <picture>
@@ -139,6 +132,13 @@
           <p>RCG gives great motivation for players to practice and huge excitement for the viewers to watch. It is the ultimate Championship with the highest prize pool and best players. <br /> Unfortunately, due to COVID-19, it’s impossible to organize an offline event. We will go online for RCG 2020.</p>
         </div>
       </div>
+      <div class="motivation-banner">
+        <picture>
+          <!--          <source srcset="../images/motivation/motivation-banner.webp" type="image/webp">-->
+          <source srcset="../images/motivation/motivation-banner.png" type="image/png">
+          <img src="../images/motivation/motivation-banner.png" alt="" />
+        </picture>
+      </div>
     </div>
   </section>
   <section class="section rcg">
@@ -149,12 +149,6 @@
     <div class="container">
       <p class="section-label">We can make RCG 2021happen</p>
       <div class="section-content">
-        <div class="rcg-video">
-          <video muted loop autoplay playsinline webkit-playsinline>
-            <source src="../video/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
         <div class="section-content-title">
           <h2 class="title-1 gradient">Let's gather $15000</h2>
           <h3 class="title-3 ttu gradient">prize pool for RCG 2021</h3>
@@ -192,10 +186,19 @@
             <span class="follow-link-title">Donate now</span>
           </div>
         </a>
+        <div class="rcg-video">
+          <video muted loop autoplay playsinline webkit-playsinline>
+            <source src="../video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   </section>
-  <section class="section details">
+  <section class="section details"
+     data-scroll
+     data-scroll-repeat="true"
+     data-scroll-call="startCounter">
     <div class="section-border">
       <p class="section-border-title">Game tournament</p>
       <img src="../images/details/details-border.png" alt="Game tournament" />
@@ -227,6 +230,7 @@
           <div class="details-thumb">
             <img src="../images/details/details-much.png" alt="How much?" />
           </div>
+          <div class="much-counter"><span class="much-counter-value">68,321</span>$</div>
           <p class="details-title title-4">How much?</p>
         </div>
         <div class="details-list-box where">

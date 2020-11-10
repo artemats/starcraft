@@ -10,7 +10,20 @@
           margin-left: -50px;
         }
         @include d(1600){
-          margin-left: 0;
+          margin-left: -10px;
+        }
+        @include d(1200){
+          max-width: 160px;
+        }
+        @include d(992){
+          margin-left: -50px;
+        }
+        @include d(575){
+          max-width: 140px;
+        }
+        @include d(480){
+          margin-left: -10px;
+          max-width: 120px;
         }
     }
     @include d(1500){

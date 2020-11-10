@@ -23,6 +23,21 @@ h1{
     @include d(1300){
       font-size: 52px;
     }
+    @include d(1200){
+      font-size: 46px;
+    }
+    @include d(992){
+      font-size: 44px;
+    }
+    @include d(767){
+      font-size: 34px;
+    }
+    @include d(575){
+      font-size: 28px;
+    }
+    @include d(480){
+      font-size: 20px;
+    }
 }
 
 h2{
@@ -42,6 +57,21 @@ h2{
     @include d(1300){
       font-size: 50px;
     }
+    @include d(1200){
+      font-size: 44px;
+    }
+    @include d(992){
+      font-size: 42px;
+    }
+    @include d(767){
+      font-size: 38px;
+    }
+    @include d(575){
+      font-size: 30px;
+    }
+    @include d(480){
+      font-size: 24px;
+    }
 }
 
 h3{
@@ -57,12 +87,27 @@ h3{
     @include d(1300){
       font-size: 32px;
     }
+    @include d(1200){
+      font-size: 28px;
+    }
+    @include d(992){
+      font-size: 26px;
+    }
+    @include d(480){
+      font-size: 16px;
+    }
 }
 
 h4{
   font-size: 22px;
   @extend .bold;
   line-height: 1.364em;
+    @include d(767){
+      font-size: 20px;
+    }
+    @include d(480){
+      font-size: 18px;
+    }
 }
 
 p, li{
@@ -91,6 +136,12 @@ p, li{
     }
     @include d(1600){
       max-width: 1480px;
+    }
+    @include d(992){
+      padding: 0 60px;
+    }
+    @include d(480){
+      padding: 0 20px;
     }
 }
 
@@ -121,6 +172,13 @@ p, li{
             @include d(1600){
               top: 0;
               right: 0;
+            }
+            @include d(575){
+              font-size: 14px;
+            }
+            @include d(480){
+              font-size: 12px;
+              top: 20px;
             }
         }
         img{
@@ -153,6 +211,15 @@ p, li{
         @include d(1600){
           left: 40px;
         }
+        @include d(992){
+          left: 20px;
+        }
+        @include d(767){
+          font-size: 12px;
+        }
+        @include d(480){
+          font-size: 10px;
+        }
     }
     &-content{
       padding: 180px 0 50px;
@@ -166,12 +233,25 @@ p, li{
             @include d(1600){
               margin-left: 0;
             }
+            @include d(992){
+              margin-bottom: 40px;
+              margin-left: -40px;
+            }
+            @include d(480){
+              margin-left: 0;
+            }
         }
         &-subtitle{
 
         }
         @include d(1500){
           padding: 90px 0 50px;
+        }
+        @include d(992){
+          padding: 60px 0;
+        }
+        @include d(480){
+          padding: 40px 0;
         }
     }
     &-abstract{
@@ -214,6 +294,10 @@ p, li{
           width: 470px;
           height: 340px;
           mix-blend-mode: screen;
+            @include d(575){
+              width: 330px;
+              height: 200px;
+            }
         }
         &-title{
           position: relative;
@@ -230,6 +314,17 @@ p, li{
           background-position: center;
           background-image: url(../images/border.png);
         }
+        @include d(575){
+          width: 115px;
+          height: 115px;
+          font-size: 12px;
+        }
+    }
+    @include d(992){
+      height: 180px;
+    }
+    @include d(575){
+      height: 115px;
     }
 }
 
