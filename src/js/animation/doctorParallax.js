@@ -14,11 +14,11 @@ const doctorTl = gsap.timeline({
 if(html.classList.contains('has-scroll-smooth') || window.innerWidth > 767) {
     doctorTl
         .set(doctor, {
-            opacity: 0.4
+            opacity: 0.6
         })
         .fromTo(doctor, {
             y: 0,
-            opacity: 0.4
+            opacity: 0.6
         }, {
             y: '-65%',
             opacity: 1,

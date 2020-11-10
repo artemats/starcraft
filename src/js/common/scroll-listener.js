@@ -6,7 +6,7 @@ export const scrollListener = () => {
         /*
         Start counter
          */
-        if(func === 'startCounter' && dir === 'enter') {
+        if(func === '' && dir === 'enter') {
 
         } else {
 

@@ -1,7 +1,7 @@
 import lottie from "lottie-web";
 
 export const initLottie = () => {
-    const linksBg = document.querySelectorAll('.follow-link-bg');
+    const linksBg = document.querySelectorAll('.lightning');
     for(let i = 0; i < linksBg.length; i++) {
         lottie.loadAnimation({
             container: linksBg[i],

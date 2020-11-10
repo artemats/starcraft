@@ -9,7 +9,7 @@ let cx = window.innerWidth / 2;
 let cy = window.innerHeight / 2;
 const thumb = document.querySelector('.motivation-content-thumb');
 
-document.querySelector('.motivation').addEventListener('mousemove', function (event) {
+document.body.addEventListener('mousemove', function (event) {
 
     mouse.x = event.pageX;
     mouse.y = event.pageY;

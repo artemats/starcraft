@@ -115,7 +115,7 @@
           bottom: 0;
         }
         @include d(767){
-          bottom: 20px;
+          bottom: -20px;
         }
         @include d(480){
           left: -330px;
@@ -136,7 +136,7 @@
           position: relative;
           bottom: 0;
           max-width: 420px;
-          opacity: .4;
+          opacity: .6;
             @include d(1500){
               max-width: 360px;
             }
@@ -153,6 +153,21 @@
             @include d(480){
               max-width: 230px;
               margin-right: -35px;
+            }
+        }
+        &-bg{
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          margin-top: -220px;
+          margin-left: -285px;
+          mix-blend-mode: screen;
+          width: 570px;
+          height: 440px;
+          pointer-events: none;
+            @include d(575){
+              width: 500px;
+              height: 370px;
             }
         }
         @include d(1700){
@@ -174,6 +189,13 @@
         @include d(480){
           padding-right: 0;
         }
+    }
+    &-bg{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1920px;
     }
     .section-border{
       top: 121px;

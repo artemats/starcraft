@@ -28,11 +28,7 @@
 <body>
 <main id="wrapper">
   <div class="background">
-<!--    <picture>-->
-<!--      <source srcset="../images/s1.webp" type="image/webp">-->
-<!--      <source srcset="../images/s1.png" type="image/png">-->
-<!--      <img src="../images/s1.png" alt="Star Craft" />-->
-<!--    </picture>-->
+    <img data-src="../images/bg.png" alt="Star Craft" class="bg-image lazy-load" />
   </div>
   <header class="header">
     <div class="container">
@@ -43,6 +39,18 @@
   </header>
   <div id="hero-sticky">
     <section class="section hero">
+      <div class="hero-bg">
+        <picture>
+          <!--      <source srcset="../images/s1.webp" type="image/webp">-->
+          <source srcset="../images/top.png" type="image/png">
+          <img src="../images/top.png" alt="Star Craft" />
+        </picture>
+      </div>
+<!--      <div class="hero-center-bg lightning"-->
+<!--           data-scroll-->
+<!--           data-scroll-sticky-->
+<!--           data-scroll-target="#hero-sticky"-->
+<!--           data-scroll-offset="0, 35%"></div>-->
       <div class="hero-center"
            data-scroll
            data-scroll-sticky
@@ -54,6 +62,7 @@
             <source srcset="../images/hero/hero-center.png" type="image/png">
             <img src="../images/hero/hero-center.png" alt="Star Craft" />
           </picture>
+          <div class="hero-center-bg lightning"></div>
         </div>
       </div>
       <div class="hero-bottom">
@@ -79,7 +88,7 @@
             <a href="#" class="follow">
               <div class="follow-link">
                 <div class="follow-link-border"></div>
-                <div class="follow-link-bg"></div>
+                <div class="follow-link-bg lightning"></div>
                 <span class="follow-link-title">Donate now</span>
               </div>
             </a>
@@ -182,7 +191,7 @@
         <a href="#" class="follow">
           <div class="follow-link">
             <div class="follow-link-border"></div>
-            <div class="follow-link-bg"></div>
+            <div class="follow-link-bg lightning"></div>
             <span class="follow-link-title">Donate now</span>
           </div>
         </a>
@@ -245,7 +254,7 @@
       <a href="#" class="follow">
         <div class="follow-link">
           <div class="follow-link-border"></div>
-          <div class="follow-link-bg"></div>
+          <div class="follow-link-bg lightning"></div>
           <span class="follow-link-title">Donate now</span>
         </div>
       </a>
