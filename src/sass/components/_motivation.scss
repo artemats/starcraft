@@ -33,6 +33,9 @@
           -webkit-perspective: 1000px;
           box-shadow: 25px 25px 32px 0 rgba(0,0,0,0.5);
           text-align: center;
+            img{
+              margin-bottom: -5px;
+            }
             @include d(767){
               width: 100%;
             }

@@ -367,9 +367,7 @@ p, li{
     }
     img{
       width: 100%;
-        &:not(:first-child){
-          margin-top: -5px;
-        }
+      height: 100%;
     }
     //@include d(767){
     //  margin-left: -870px;
