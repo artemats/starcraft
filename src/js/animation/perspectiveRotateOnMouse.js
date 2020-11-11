@@ -14,9 +14,10 @@ document.body.addEventListener('mousemove', function (event) {
     mouse.x = event.pageX;
     mouse.y = event.pageY;
 
-    cancelAnimationFrame(request);
-    request = requestAnimationFrame(update);
-
+    if(window.innerWidth > 992) {
+        cancelAnimationFrame(request);
+        request = requestAnimationFrame(update);
+    }
 });
 
 const update = () => {
