@@ -109,9 +109,6 @@
           right: -30px;
         }
         @include d(1440){
-          bottom: 10px;
-        }
-        @include d(1300){
           bottom: 0;
         }
         @include d(767){

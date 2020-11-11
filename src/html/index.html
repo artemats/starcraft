@@ -28,7 +28,11 @@
 <body>
 <main id="wrapper">
   <div class="background">
-    <img data-src="../images/bg.png" alt="Star Craft" class="bg-image lazy-load" />
+    <picture>
+      <!--          <source srcset="../images/motivation/motivation-banner.webp" type="image/webp">-->
+      <source srcset="../images/bg.png" type="image/png">
+      <img data-src="../images/bg.png" alt="Star Craft" class="bg-image" />
+    </picture>
   </div>
   <header class="header">
     <div class="container">
