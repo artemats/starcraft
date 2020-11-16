@@ -2,6 +2,7 @@
   min-height: 1100px;
   padding-top: 20px;
   z-index: 1;
+  margin-bottom: 300px;
     &-list{
       display: flex;
       margin: 0 -134px 60px;
@@ -37,9 +38,6 @@
         @include d(992){
           flex-direction: column;
         }
-    }
-    &-title{
-
     }
     &-thumb{
       height: 390px;
@@ -100,6 +98,9 @@
     }
     @include d(1500){
       min-height: 0;
+    }
+    @include d(480){
+      margin-bottom: 200px;
     }
 }
 

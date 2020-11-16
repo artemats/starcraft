@@ -9,7 +9,6 @@ import './animation/doctorParallax';
 import './animation/countdown';
 import {scrollListener} from "./common/scroll-listener";
 import {setBgHeight} from "./common/setBgHeight";
-// import {lazyLoadImages} from "./common/lazyLoadImages";
 
 /*
 Initial follow moving for links
@@ -21,7 +20,6 @@ Initial lottie animation
  */
 document.addEventListener('DOMContentLoaded', function () {
     initLottie();
-    // lazyLoadImages();
 }, false);
 
 /*
@@ -30,5 +28,3 @@ Init scroll listener
 scrollListener();
 
 setBgHeight();
-
-console.log('ready');

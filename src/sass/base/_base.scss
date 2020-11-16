@@ -48,14 +48,16 @@ a {
   color: inherit;
   margin: 0;
   background-color: transparent;
-  &:visited {
-    text-decoration: none;
-  }
-  &:active,
-  &:focus {
-    outline: none;
-    text-decoration: none;
-  }
+    &:visited,
+    &:hover{
+      text-decoration: none;
+      color: inherit;
+    }
+    &:active,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
 }
 
 abbr[title] {

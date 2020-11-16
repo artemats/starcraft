@@ -18,7 +18,8 @@ module.exports = {
                     loader: "babel-loader",
                     options: {
                         presets: ["@babel/preset-env"],
-                        plugins: ['transform-class-properties']
+                        plugins: ['transform-class-properties'],
+                        sourceMap: true
                     }
                 }
             },
@@ -46,7 +47,8 @@ module.exports = {
                             loader: 'sass-loader',
                             options: {
                                 sassOptions: {
-                                    includePaths: ["absolute/path/a", "absolute/path/b"]
+                                    includePaths: ["absolute/path/a", "absolute/path/b"],
+                                    sourceMap: true
                                 }
                             }
                         }
@@ -67,7 +69,7 @@ module.exports = {
                         options: {
                             name: '[name].[ext]',
                             outputPath: 'images/',
-                            publicPath: 'images/',
+                            publicPath: '../images/',
                             useRelativePath: true,
                             esModule: false
                         }
@@ -81,7 +83,8 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'fonts/'
+                            outputPath: '../fonts/',
+                            sourceMap: true
                         }
                     }
                 ]
@@ -100,13 +103,27 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: 'style.css',
+            filename: 'css/style.css',
             allChunks: true,
             disable: false
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/html', 'index.html'),
+            minify: {
+                collapseWhitespace: false
+            },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'discontinued.html',
+            template: path.resolve(__dirname, 'src/html', 'discontinued.html'),
+            minify: {
+                collapseWhitespace: false
+            },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'confirmed.html',
+            template: path.resolve(__dirname, 'src/html', 'confirmed.html'),
             minify: {
                 collapseWhitespace: false
             },

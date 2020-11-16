@@ -1,4 +1,4 @@
-import { TweenLite, TweenMax, Power1, Power4 } from 'gsap';
+import { TweenLite, Power1, Power4 } from 'gsap';
 const fadeElements = document.querySelectorAll('.load-fade');
 const fadeElementSmooth = document.querySelector('.load-fade-smooth');
 const fallElement = document.querySelector('.load-fall');
@@ -28,7 +28,7 @@ for(let i = 0; i < fadeElements.length; i++) {
 }
 
 const shapePage = () => {
-    if(window.innerWidth > 991) {
+    if(window.innerWidth > 991 && fallElement) {
         for (let j = 0; j < shapeElements.length; j++) {
             shapeElements[j].classList.add('is-active');
         }
